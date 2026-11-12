@@ -130,7 +130,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
-    gap: 48px;
+    gap: 38px;
 }
 
 .hero-content {
@@ -163,8 +163,8 @@ img {
 }
 
 .hero-image {
-  width: 80%;
-  max-width: 300px;
+  width: 100%;
+  max-width: 400px;
   justify-self: center;
   border-radius: var(--radius);
   margin-bottom: 40px;
