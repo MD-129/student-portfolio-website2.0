@@ -427,6 +427,11 @@ main > section:hover,
     font-weight: 600;
 }
 
+.field-error {
+    color: #b42318;
+    font-size: 0.85rem;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
