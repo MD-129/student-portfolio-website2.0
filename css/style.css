@@ -241,7 +241,9 @@ main > section:hover,
 }
 
 
-/* --- Skills Section Styles --- */
+/* =================================
+  SKILLS - SECTION
+================================= */
 .skills-section {
   background-color: var(--bg);
   color: var(--text);
@@ -310,7 +312,9 @@ main > section:hover,
   margin-bottom: 0;
 }
 
-/* --- Hobbies Section Styles --- */
+/* =================================
+  HOBBIES - SECTION
+================================= */
 .hobbies-section {
   background-color: var(--bg);
   color: var(--text);
@@ -379,7 +383,9 @@ main > section:hover,
 }
 
 
-/* --- Contact Section ---*/
+/* =================================
+  CONTACTS- SECTION
+================================= */
 
 .section-contact {
     display: grid;
@@ -479,7 +485,153 @@ main > section:hover,
 }
 
 /* =================================
-   5. NAVIGATION
+  PROJECTS - SECTION
+================================= */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.projects {
+  padding: 100px 7%;
+  background: #faf7f2;
+  color: #241b25;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 55px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #806b7d;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 5vw, 58px);
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.section-heading p {
+  color: #746b70;
+  line-height: 1.8;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.project-card {
+  border: 1px solid #e9dfd7;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 12px;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(50, 30, 40, 0.08);
+}
+
+.project-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #eee5e0;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-content {
+  padding: 22px 10px 12px;
+}
+
+.project-number {
+  color: #75436f;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+.project-content h3 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.project-content p {
+  color: #746b70;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 70px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.tags span {
+  background: #eee3eb;
+  color: #563b53;
+  padding: 8px 12px;
+  border-radius: 30px;
+  font-size: 11px;
+}
+
+.project-links {
+  display: flex;
+  gap: 18px;
+  border-top: 1px solid #e9dfd7;
+  padding-top: 18px;
+}
+
+.project-links a {
+  color: #352335;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: #95618b;
+}
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    padding: 70px 6%;
+  }
+
+/* =================================
+    NAVIGATION
 ================================= */
 
 .main-nav {
@@ -506,7 +658,7 @@ main > section:hover,
 }
 
 /* =================================
-   6. MAIN CONTENT
+    MAIN CONTENT
 ================================= */
 
 main {
@@ -515,7 +667,7 @@ main {
 }
 
 /* =================================
-   7. FOOTER
+    FOOTER
 ================================= */
 
 .site-footer {
@@ -527,7 +679,7 @@ main {
 }
 
 /* =================================
-   8. RESPONSIVENESS
+   RESPONSIVENESS
 ================================= */
 
 @media (max-width: 650px) {
@@ -565,4 +717,19 @@ main {
     main {
         padding-block: 32px;
     }
+
+    .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    padding: 70px 6%;
+  }
+
 }
