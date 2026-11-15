@@ -1,0 +1,70 @@
+.site-header {
+    background: #F7F4F7;
+    border-bottom: 1px solid #EDE5F0;
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(12px) saturate(150%);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+.site-header .logo {
+    grid-column: 1;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    padding: 0.5rem 1rem;
+}
+
+.site-header .main-nav {
+    grid-column: 2;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2px 0;
+}
+
+.site-header .main-nav a {
+    font-size: 0.9rem;
+    color: #302734;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.site-header .main-nav a:hover,
+.site-header .main-nav a.active {
+    color: #76528A;
+    background: #EDE5F0;
+}
+
+@media (max-width: 650px) {
+    .site-header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 8px;
+    }
+
+    .site-header .logo,
+    .site-header .main-nav {
+        grid-column: 1;
+    }
+
+    .site-header .main-nav {
+        gap: 4px;
+    }
+
+    .site-header .main-nav a {
+        font-size: 0.82rem;
+        padding: 7px 9px;
+    }
+}

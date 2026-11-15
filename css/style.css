@@ -68,54 +68,6 @@ img {
   margin-inline: auto;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -2px;
-    padding: 0.5rem 1rem;
-}
-
-/* =================================
-   4. HEADER
-================================= */
-
-.site-header {
-    background: var(--bg-light);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 20px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
-    backdrop-filter: blur(12px) saturate(150%);
-    border-bottom: 1px solid var(--accent-light);
-}
-
-.site-header .logo {
-    grid-column: 1;
-}
-
-.site-header .main-nav {
-    grid-column: 2;
-    justify-self: center;
-}
-
-.header-content {
-    min-height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -2px;
-}
-
 /* =================================
    5. HERO SECTION
 ================================= */
@@ -631,33 +583,6 @@ main > section:hover,
   }
 
 /* =================================
-    NAVIGATION
-================================= */
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 2px 0;
-}
-
-.main-nav a {
-    font-size: 0.9rem;
-    color: var(--text);
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.25s ease;
-}
-
-.main-nav a:hover,
-.main-nav a.active {
-    color: var(--accent);
-    background: var(--accent-light);
-}
-
-/* =================================
     MAIN CONTENT
 ================================= */
 
@@ -692,26 +617,6 @@ main {
 
     .about-card-row {
         grid-template-columns: 1fr;
-    }
-
-    .site-header {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 8px;
-    }
-
-    .site-header .logo,
-    .site-header .main-nav {
-        grid-column: 1;
-    }
-
-    .main-nav {
-        gap: 4px;
-    }
-
-    .main-nav a {
-        font-size: 0.82rem;
-        padding: 7px 9px;
     }
 
     main {

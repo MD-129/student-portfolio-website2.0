@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planner | Moyosoluwa Davies</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/planner.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
 
@@ -21,6 +22,170 @@
   </header>
 
  <main>
+
+<div class="planner-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span>✦</span>
+      <h2>My Planner</h2>
+    </div>
+
+    <p class="menu-label">WORKSPACE</p>
+
+    <nav>
+      <a href="#overview" class="active">⌂ Overview</a>
+      <a href="#tasks">▤ My Tasks</a>
+      <a href="#calendar">▦ Calendar</a>
+    </nav>
+
+    <div class="sidebar-note">
+      <p>Little steps every day lead to big achievements.</p>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <header class="topbar">
+      <span>ACADEMIC ORGANISER</span>
+      <span id="current-date"></span>
+    </header>
+
+    <!-- WELCOME -->
+    <section class="welcome" id="overview">
+      <p class="eyebrow">YOUR SPACE TO STAY ORGANISED</p>
+      <h1>My Academic Planner.</h1><h2>Hi Moyo!</h2>
+      <p>Plan your work, manage your time and stay on track.</p>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats">
+
+      <div class="stat-card">
+        <p>Total Tasks</p>
+        <h2 id="total-tasks">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <p>Completed</p>
+        <h2 id="completed-tasks">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <p>Pending</p>
+        <h2 id="pending-tasks">0</h2>
+      </div>
+
+    </section>
+
+    <!-- TASK SECTION -->
+    <section class="task-section" id="tasks">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">KEEP YOURSELF ORGANISED</p>
+          <h2>My Tasks</h2>
+        </div>
+
+        <button id="add-task-btn">+ Add New Task</button>
+      </div>
+
+      <!-- TASK FORM -->
+      <form id="task-form" hidden>
+
+        <input
+          type="text"
+          id="task-title"
+          placeholder="Task title"
+          required
+        >
+
+        <input
+          type="text"
+          id="task-course"
+          placeholder="Course / Subject"
+          required
+        >
+
+        <input
+          type="date"
+          id="task-deadline"
+          required
+        >
+
+        <select id="task-priority">
+          <option value="Low">Low Priority</option>
+          <option value="Medium" selected>Medium Priority</option>
+          <option value="High">High Priority</option>
+        </select>
+
+        <button type="submit">Save Task</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+
+      </form>
+
+      <!-- FILTERS -->
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="pending">Pending</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+
+      <!-- TASK LIST -->
+      <div id="task-list"></div>
+
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="calendar-section" id="calendar">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PLAN AHEAD</p>
+          <h2>Calendar</h2>
+        </div>
+
+        <div class="calendar-controls">
+          <button id="prev-month">‹</button>
+          <span id="month-year"></span>
+          <button id="next-month">›</button>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <div class="weekdays">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+
+        <div class="calendar-days" id="calendar-days"></div>
+      </div>
+
+      <p id="selected-date-label" class="selected-label">
+        Select a date to view its tasks.
+      </p>
+
+      <div id="selected-date-tasks"></div>
+
+    </section>
+
+    <footer>
+      Designed for productivity and academic success. ♡
+    </footer>
+
+  </main>
+</div>
+
+<script src="js/planner.js"></script>
+</body>
+</html>
 
  </main>
 
