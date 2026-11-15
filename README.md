@@ -1,10 +1,10 @@
 # Personal Portfolio Website with Academic Planner
 
-A responsive personal portfolio website developed as part of the COS 106 project at Miva Open University. The website showcases personal information, projects, interests and includes an integrated academic planner for managing academic tasks.
+A responsive personal portfolio website developed as part of the CSC 106 project at Miva Open University. The website showcases personal information, projects, interests and includes an integrated academic planner for managing academic tasks.
 
 ## Live Website
 
-[View Published Website](https://md-129.github.io/student-portfolio-website2.0/)
+[View Published Website](https://md-129-student-portfolio.netlify.app/)
 
 ## GitHub Repository
 
@@ -86,8 +86,7 @@ The contact form uses Web3Forms to process submitted messages. A valid submissio
 The website was deployed using GitHub Pages.
 
 **Published URL:**  
-https://md-129.github.io/student-portfolio-website2.0/
-
+https://md-129-student-portfolio.netlify.app/
 ## Project Information
 
 | Detail | Information |
